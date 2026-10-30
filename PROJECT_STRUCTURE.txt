@@ -1,0 +1,9 @@
+student_database_crud/
+├── main.py              FastAPI application and CRUD endpoints
+├── database.py          SQLite connection and table setup
+├── requirements.txt     Python dependencies
+├── README.md            Setup, usage, API and GitHub instructions
+├── sample_requests.http Example API requests
+├── .gitignore           Files excluded from Git
+└── tests/
+    └── test_api.py      API tests

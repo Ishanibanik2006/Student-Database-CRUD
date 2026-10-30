@@ -1,0 +1,37 @@
+### Health check
+GET http://127.0.0.1:8000/health
+
+### Create a student
+POST http://127.0.0.1:8000/students
+Content-Type: application/json
+
+{
+  "student_id": "STU001",
+  "name": "Riya Das",
+  "date_of_birth": "2005-04-12",
+  "email": "riya@example.com",
+  "phone": "9876543210",
+  "course": "BCA",
+  "address": "Kolkata",
+  "enrollment_date": "2024-08-01"
+}
+
+### List all students
+GET http://127.0.0.1:8000/students
+
+### Filter students
+GET http://127.0.0.1:8000/students?course=BCA
+
+### View one student
+GET http://127.0.0.1:8000/students/STU001
+
+### Update student
+PATCH http://127.0.0.1:8000/students/STU001
+Content-Type: application/json
+
+{
+  "course": "BCA - 2nd Year"
+}
+
+### Delete student
+DELETE http://127.0.0.1:8000/students/STU001
